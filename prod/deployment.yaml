@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: production-deployment
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: production-container
-        image: europe-west1-docker.pkg.dev/qwiklabs-gcp-04-c05d513edd11/my-repository/hello-cloudbuild:v1.0
+        image: europe-west1-docker.pkg.dev/qwiklabs-gcp-04-c05d513edd11/my-repository/hello-cloudbuild:v2.0
         ports:
         - containerPort: 8080
